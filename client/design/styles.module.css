@@ -1,0 +1,8 @@
+.header {
+  color: aquamarine;
+
+}
+.header:hover {
+  background: #1a202c;
+  color: #ffffff;
+}
