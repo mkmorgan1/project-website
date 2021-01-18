@@ -1,0 +1,41 @@
+{
+  "name": "projects-website",
+  "version": "1.0.0",
+  "description": "Shows a couple of projects I have been working on",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "start": "nodemon server/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkmorgan1/projects-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkmorgan1/projects-website/issues"
+  },
+  "homepage": "https://github.com/mkmorgan1/projects-website#readme",
+  "dependencies": {
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^5.15.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
