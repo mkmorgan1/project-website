@@ -3,7 +3,7 @@ body {
   min-width: 400px;
   /* width: 90%; */
   /* margin: 0 auto; */
-  /* background-color: #CCDDF563; */
+  /* background-color: #B6C6DB63; */
 }
 
 /*
@@ -19,7 +19,7 @@ Name and Title
 .header {
   text-align: center;
   color:#393e44;
-  background-color: #CCDDF5;
+  background-color: #B6C6DB;
   padding-top: 30px;
   align-items: center;
   /* min-width: 400px; */
@@ -29,14 +29,14 @@ Name and Title
 }
 
 .header:hover {
-  color: #CCDDF5;
+  color: #B6C6DB;
   background-color:#666E7A;
 
 }
 
-.matthew{
-  font-size: 40px;
-  letter-spacing: 10px;
+.matthew {
+  font-size: 45px;
+  letter-spacing: 15px;
   text-rendering: geometricPrecision;
   font-weight: 300;
 }
@@ -48,7 +48,7 @@ Name and Title
 .link {
   padding: 10px;
   font-size: 25px;
-  color: #CCDDF5;
+  color: #B6C6DB;
   transition: font-weight 0.5s;
 }
 .link:hover {
@@ -91,17 +91,17 @@ Titles for project names
 
 .project2:active ~ .underline {
   margin-left: 60%;
-  background-color: #CCDDF563;
+  background-color: #B6C6DB63;
 }
 
 .project1:active ~ .underline {
   margin-left: 10%;
-  background-color: #CCDDF563;
+  background-color: #B6C6DB63;
 }
 
 
 .divider {
-  background: #CCDDF563;
+  background: #B6C6DB63;
   ;
   height: .1rem;
   width: 80%;
