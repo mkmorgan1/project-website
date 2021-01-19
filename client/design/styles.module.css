@@ -1,8 +1,118 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 400px;
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  /* background-color: #CCDDF563; */
+}
+
+/*
+========================
+Name and Title
+========================
+*/
+
+.headerBox {
+  height: 270px;
+}
+
 .header {
-  color: aquamarine;
+  text-align: center;
+  color:#393e44;
+  background-color: #CCDDF5;
+  padding-top: 30px;
+  align-items: center;
+  /* min-width: 400px; */
+  height: 225px;
+  transition: color 1s, background-color 1s ;
+  font-weight: 100;
+}
+
+.header:hover {
+  color: #CCDDF5;
+  background-color:#666E7A;
 
 }
-.header:hover {
-  background: #1a202c;
-  color: #ffffff;
+
+.matthew{
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-rendering: geometricPrecision;
+  font-weight: 300;
+}
+.matthewTitle {
+  text-rendering: geometricPrecision;
+  font-style: italic;
+}
+
+.link {
+  padding: 10px;
+  font-size: 25px;
+  color: #CCDDF5;
+  transition: font-weight 0.5s;
+}
+.link:hover {
+/* text-underline-offset: */
+}
+
+/*
+========================
+Titles for project names
+========================
+*/
+
+.projectTitles {
+  padding: 10px;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  /* min-width: 400px; */
+}
+
+.project1, .project2 {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.underline {
+  height: .25rem;
+  width: 30%;
+  margin-left: 10%;
+  background: #666E7A;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.project2:hover ~ .underline {
+  margin-left: 60%;
+}
+
+.project2:active ~ .underline {
+  margin-left: 60%;
+  background-color: #CCDDF563;
+}
+
+.project1:active ~ .underline {
+  margin-left: 10%;
+  background-color: #CCDDF563;
+}
+
+
+.divider {
+  background: #CCDDF563;
+  ;
+  height: .1rem;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+}
+
+.videoBox {
+  padding: 10px;
+}
+
+video {
+  width: 100%;
 }
