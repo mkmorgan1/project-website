@@ -8,14 +8,13 @@ body {
 
 /*
 ========================
-Name and Title
+  Name and Title
 ========================
 */
 
 .headerBox {
   height: 270px;
 }
-
 .header {
   text-align: center;
   color:#393e44;
@@ -27,13 +26,11 @@ Name and Title
   transition: color 1s, background-color 1s ;
   font-weight: 100;
 }
-
 .header:hover {
   color: #B6C6DB;
   background-color:#666E7A;
 
 }
-
 .matthew {
   font-size: 45px;
   letter-spacing: 15px;
@@ -44,7 +41,6 @@ Name and Title
   text-rendering: geometricPrecision;
   font-style: italic;
 }
-
 .link {
   padding: 10px;
   font-size: 25px;
@@ -56,9 +52,9 @@ Name and Title
 }
 
 /*
-========================
-Titles for project names
-========================
+============================
+  Titles for project names
+============================
 */
 
 .projectTitles {
@@ -68,7 +64,6 @@ Titles for project names
   align-items: center;
   /* min-width: 400px; */
 }
-
 .project1, .project2 {
   display: inline-block;
   width: 50%;
@@ -76,29 +71,47 @@ Titles for project names
   font-size: 25px;
 }
 
-.underline {
+/*
+============================
+  Underlines for selection
+============================
+*/
+
+.underline1 {
+  margin-left: 10%;
+}
+.underline2 {
+  margin-left: 60%;
+}
+.underline1, .underline2 {
   height: .25rem;
   width: 30%;
-  margin-left: 10%;
   background: #666E7A;
   border: none;
   transition: .3s ease-in-out;
 }
 
-.project2:hover ~ .underline {
+/* hover */
+.project2:hover ~ .underline1 {
   margin-left: 60%;
 }
-
-.project2:active ~ .underline {
-  margin-left: 60%;
-  background-color: #B6C6DB63;
-}
-
-.project1:active ~ .underline {
+.project1:hover ~ .underline2 {
   margin-left: 10%;
+}
+
+/* click */
+.project2:active ~ .underline1 {
+  background-color: #B6C6DB63;
+}
+.project1:active ~ .underline2 {
   background-color: #B6C6DB63;
 }
 
+/*
+=========================
+  divider line
+=========================
+*/
 
 .divider {
   background: #B6C6DB63;
@@ -109,10 +122,16 @@ Titles for project names
   border: none;
 }
 
+/*
+=========================
+  videos
+=========================
+*/
+
 .videoBox {
   padding: 10px;
 }
-
 video {
-  width: 100%;
+  height: 500px;
+  align-items: right;
 }
