@@ -7,7 +7,6 @@ import RatingsAndReviews from './projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from './projects/TimeTravelAgent.jsx';
 import HorizontallyScaling from './projects/HorizontallyScaling.jsx';
 import { useSelector } from 'react-redux';
-import { select1 , select2 } from './actions/index.js';
 
 
 const App = () => {

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { toggleFirst, toggleSecond, toggleThird, toggleFourth } from './toggle.js';
-import underlineClass from './underlineClass.js';
+import { toggleFirst, toggleSecond, toggleThird, toggleFourth } from './titleSelectorReducer.js';
+import underlineClass from './underlineClassReducer.js';
 
 const allReducers = combineReducers({
   first: toggleFirst,

@@ -1,8 +1,8 @@
 import React from 'react';
 import style from '../design/styles.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { select1, select2, select3, select4 } from './actions/titleSelector.js';
-import underlineActions from './actions/underlineActions.js';
+import { select1, select2, select3, select4 } from './actions/titleSelectorActions.js';
+import { und1, und2, und3, und4 } from './actions/underlineClassActions.js';
 
 const Titles = () => {
   const first = useSelector(state => state.first);
@@ -15,7 +15,7 @@ const Titles = () => {
 
   const reducers = [first, second, third, fourth];
   const selectActions = [select1, select2, select3, select4];
-  const undActions = [underlineActions.und1, underlineActions.und2,underlineActions.und3, underlineActions.und4];
+  const undActions = [und1, und2, und3, und4];
 
   const toggleProjects = (selected) => {
     for (let i = 0; i < reducers.length; i++) {
