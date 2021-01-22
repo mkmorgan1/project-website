@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../design/styles.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { select1, select2, select3, select4 } from './actions/index.js';
+import { select1, select2, select3, select4 } from './actions/titleSelector.js';
 import underlineActions from './actions/underlineActions.js';
 
 const Titles = () => {
