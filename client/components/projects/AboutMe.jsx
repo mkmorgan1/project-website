@@ -7,19 +7,22 @@ const AboutMe = () => {
 
       <div className={style.description}>
         <h3 className={style.descriptionHeader}>Who Am I?</h3>
-        <p>User is a time traveler who shoots portals between the past and future to avoid obstacles.</p>
+        <p>Full-Stack Software Engineer | Landscaper | Massage Therapist | Yoga Instructor</p>
         <ul>
           <li>
-            Utilized <b>​Webpack</b> ​to bundle all ​<b>Phaser 3</b> ​and ​<b>React</b>​ elements and an ​<b>Express​</b> server to render the game as a single page application
+            Driven by creativity
           </li>
           <li>
-            Applied ​<b>JavaScript Class Inheritance​</b> to create multiple levels with <b>reusable code</b>
+            Values respecting one-another
           </li>
           <li>
-            Includes a <b>tutorial scene</b> and a <b>credits scene</b> created with the user experience in mind
+            Enjoys a challenge
           </li>
           <li>
-            Created all the <b>art</b> and <b>animations</b>
+            Self-driven
+          </li>
+          <li>
+            Always learning
           </li>
         </ul>
       </div>
