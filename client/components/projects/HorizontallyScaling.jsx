@@ -6,7 +6,7 @@ const HorizontallyScaling = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h3 className={style.descriptionHeader}>Horizontal Scaling of an Application</h3>
+        <h2 className={style.descriptionHeader}>Horizontal Scaling of an Application</h2>
         <p>Loaded 10,000,000 records into a Neo4j and PostgreSQL database and horozontaly scaled the application to handle 20 times more requests per second</p>
         <ul>
           <li>
