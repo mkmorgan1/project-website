@@ -7,6 +7,12 @@ const TimeTravelAgent = () => {
       <div className={style.description}>
         <h2 className={style.descriptionHeader}>Time Travel Agent</h2>
         <p>User is a time traveler who shoots portals between the past and future to avoid obstacles.</p>
+        {/* Github */}
+        <p align='center'>
+          <a className={style.link} href='https://github.com/mkmorgan1/time-travel-agent' target='blank'>
+            <i className='fab fa-github-square'></i>
+          </a>
+        </p>
         <ul>
           <li>
             Utilized <b>​Webpack</b> ​to bundle all ​<b>Phaser 3</b> ​and ​<b>React</b>​ elements and an ​<b>Express​</b> server to render the game as a single page application

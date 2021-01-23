@@ -7,6 +7,12 @@ const RatingsAndReviews = () => {
       <div className={style.description}>
         <h2 className={style.descriptionHeader}>Ratings And Reviews</h2>
         <p>Application for a booking site</p>
+        <p align='center'>
+          {/* Github */}
+          <a className={style.link} href='https://github.com/Mormont-team-6/Customer-Reviews-Service' target='blank'>
+            <i className='fab fa-github-square'></i>
+          </a>
+        </p>
         <ul>
           <li>
             Rendered each component using ​<b>React​</b> for its ​reusability of each component and the use of ​state​ to store information

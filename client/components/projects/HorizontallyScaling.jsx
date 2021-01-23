@@ -6,14 +6,20 @@ const HorizontallyScaling = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h2 className={style.descriptionHeader}>
-          Horizontal Scaling of an Application
+        <p align='center'>
+            <br/>
+            {/* Github */}
+            <a className={style.link} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
+              <i className='fab fa-github-square'></i>
+            </a>
+          </p>
+          <div className={style.discriptionDivider}></div>
+          {/* <div className={style.descriptionHeaderBox}> */}
+          <h2 className={style.descriptionHeader}>
+            Horizontal Scaling of an Application
+          </h2>
 
-        </h2>
-        {/* Github */}
-        <a className={`${style.link} ${style.descriptionLink}`} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
-          <i className='fab fa-github-square'></i>
-        </a>
+        {/* </div> */}
         <p>Loaded 10,000,000 records into a Neo4j and PostgreSQL database and horozontaly scaled the application to handle 20 times more requests per second</p>
         <ul>
           <li>

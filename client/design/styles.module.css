@@ -117,13 +117,16 @@ body {
 =========================
 */
 
-.divider {
+.divider, .discriptionDivider {
   /* background: #666e7a73; */
   height: .1rem;
   width: 90%;
   margin: 0 auto;
   border: none;
   box-shadow: rgba(255, 254, 254, 0.1) 0px 1px 0px;
+}
+.discriptionDivider {
+  box-shadow: rgba(17, 17, 26, 0.705) 0px 1px 0px;
 }
 
 /*
@@ -157,6 +160,10 @@ b {
   font-family: 'Bodoni Moda', serif;
   font-weight:600;
 }
+.descriptionHeaderBox {
+  display: grid;
+  grid-template-columns: 85% 15%;;
+}
 .description {
   padding: 25px;
   background-color: #FAFBF6;
@@ -167,10 +174,10 @@ b {
 }
 .videoBox {
   padding-left: 20px;
-  text-align: center;
+  margin: 0 auto;
 }
 
-video , img {
+video, img {
   border-radius: 15px;
   height: 500px;
   transition: box-shadow 1s;
