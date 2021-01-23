@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h3>Who Am I?</h3>
+        <h3 className={style.descriptionHeader}>Who Am I?</h3>
         <p>User is a time traveler who shoots portals between the past and future to avoid obstacles.</p>
         <ul>
           <li>

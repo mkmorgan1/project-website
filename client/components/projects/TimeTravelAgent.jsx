@@ -6,7 +6,7 @@ const TimeTravelAgent = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h3>Time Travel Agent</h3>
+        <h3 className={style.descriptionHeader}>Time Travel Agent</h3>
         <p>User is a time traveler who shoots portals between the past and future to avoid obstacles.</p>
         <ul>
           <li>

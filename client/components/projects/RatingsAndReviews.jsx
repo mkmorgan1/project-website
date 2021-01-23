@@ -6,7 +6,7 @@ const RatingsAndReviews = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h3>Ratings And Reviews</h3>
+        <h3 className={style.descriptionHeader}>Ratings And Reviews</h3>
         <p>Application for a booking site</p>
         <ul>
           <li>

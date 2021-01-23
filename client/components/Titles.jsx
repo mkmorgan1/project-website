@@ -46,19 +46,19 @@ const Titles = () => {
         className={`${style.project} ${style.project2}`}
         onClick={() => toggleProjects(1)}
       >
-        Time Travel Agent
+        Phaser 3
       </span>
       <span
         className={`${style.project} ${style.project3}`}
         onClick={() => toggleProjects(2)}
       >
-        Rating and Reviews
+        Front End
       </span>
       <span
         className={`${style.project} ${style.project4}`}
         onClick={() => toggleProjects(3)}
       >
-        Horizontally Scaling
+        Scaling and Back End
       </span>
       <div className={`${style.underline} ${style[underlineClass]}`}></div>
     </div>
