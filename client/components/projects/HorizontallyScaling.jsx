@@ -6,7 +6,14 @@ const HorizontallyScaling = () => {
     <div className={style.videoAndDescription}>
 
       <div className={style.description}>
-        <h2 className={style.descriptionHeader}>Horizontal Scaling of an Application</h2>
+        <h2 className={style.descriptionHeader}>
+          Horizontal Scaling of an Application
+
+        </h2>
+        {/* Github */}
+        <a className={`${style.link} ${style.descriptionLink}`} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
+          <i className='fab fa-github-square'></i>
+        </a>
         <p>Loaded 10,000,000 records into a Neo4j and PostgreSQL database and horozontaly scaled the application to handle 20 times more requests per second</p>
         <ul>
           <li>
@@ -29,10 +36,6 @@ const HorizontallyScaling = () => {
 
       <div className={style.videoBox}>
         <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/Screen+Shot+2020-12-18+at+8.18.29+PM.png" alt="Horozantal scaling"/>
-        {/* <video autoPlay muted loop id='myVideo'>
-          <source src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/timeTravelAgent.mov' type='video/mp4'/>
-          Your browser does not support HTML5 video.
-        </video> */}
       </div>
 
     </div>

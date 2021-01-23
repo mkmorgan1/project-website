@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   min-width: 400px;
-  /* width: 90%; */
-  /* margin: 0 auto; */
-  /* background-color: #C997C6; */
+  background-image: url('https://matthew-resume-website.s3.us-east-2.amazonaws.com/debut-dark.png');
+  background-color: #3A3B39;
+  margin: -10px;
 }
 
 /*
@@ -18,18 +18,19 @@ body {
 .header {
   text-align: center;
   color:#2d3136;
-  /* background-color: #B0EFEF; */
+  background-color: #FAFBF6;
   padding: 10px 50px;
   align-items: center;
   min-width: 550px;
   height: 225px;
-  /* transition: color 1s, background-color 1s ; */
   font-weight: 100;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.header:hover {
-  /* color: #1c1e22;
-  background-color:#83D9DC; */
+.header, .description, video, img {
+  transition: box-shadow 1s;
+}
+.header:hover , .description:hover {
+  box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .matthew {
   font-family: 'Bodoni Moda', serif;
@@ -59,6 +60,7 @@ body {
 */
 
 .projectTitles {
+  color: #FAFBF6;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -67,7 +69,6 @@ body {
   grid-template-areas:
     "one two three four"
     "underline underline underline underline";
-  /* min-width: 400px; */
 }
 .project {
   text-align: center;
@@ -87,7 +88,7 @@ body {
   align-items: center;
   height: .25rem;
   width: 15%;
-  background: #C997C6;
+  background: #e0dcdc;
   border: none;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   transition: .3s ease-in-out;
@@ -121,9 +122,8 @@ body {
   height: .1rem;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 20px;
   border: none;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  box-shadow: rgba(255, 254, 254, 0.1) 0px 1px 0px;
 }
 
 /*
@@ -135,8 +135,9 @@ body {
 
 
 .videoAndDescription{
+  padding: 20px 30px;
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 35% 65%;
 }
 p {
   font-style: italic;
@@ -154,21 +155,27 @@ b {
 .descriptionHeader {
   text-align: center;
   font-family: 'Bodoni Moda', serif;
-  font-weight: 600;
+  font-weight:600;
 }
 .description {
-  padding: 20px;
-  background-color: #FCDCDF;
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 25px;
+  background-color: #FAFBF6;
+  border-radius: 15px;
+  height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  overflow: scroll;
 }
 .videoBox {
-  padding-left: 10px;
+  padding-left: 20px;
   text-align: center;
 }
 
 video , img {
+  border-radius: 15px;
   height: 500px;
+  transition: box-shadow 1s;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+video:hover, img:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0) 0px 8px 4px, rgba(0, 0, 0, 0) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+}

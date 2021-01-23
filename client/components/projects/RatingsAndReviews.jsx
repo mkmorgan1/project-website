@@ -4,7 +4,6 @@ import style from '../../design/styles.module.css';
 const RatingsAndReviews = () => {
   return (
     <div className={style.videoAndDescription}>
-
       <div className={style.description}>
         <h2 className={style.descriptionHeader}>Ratings And Reviews</h2>
         <p>Application for a booking site</p>
@@ -23,14 +22,12 @@ const RatingsAndReviews = () => {
           </li>
         </ul>
       </div>
-
       <div className={style.videoBox}>
         <video autoPlay muted loop id='myVideo'>
           <source src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/ratings-%26-Reviews.mov' type='video/mp4'/>
           Your browser does not support HTML5 video.
         </video>
       </div>
-
     </div>
   )
 }

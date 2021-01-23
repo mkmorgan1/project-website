@@ -47,10 +47,6 @@ const AboutMe = () => {
 
       <div className={style.videoBox}>
         <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/IMG_0966.jpg" alt="Matthew Morgan"/>
-        {/* <video autoPlay muted loop id='myVideo'>
-          <source src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/timeTravelAgent.mov' type='video/mp4'/>
-          Your browser does not support HTML5 video.
-        </video> */}
       </div>
 
     </div>
