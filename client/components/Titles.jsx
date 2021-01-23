@@ -61,11 +61,6 @@ const Titles = () => {
         Horizontally Scaling
       </span>
       <div className={`${style.underline} ${style[underlineClass]}`}></div>
-      {/* style={{margin-left: `${underline[3]}`}} style={{marginLeft: `${underlinePostion}`}}*/}
-      {/* {first && <div className={style.underline1}></div>}
-      {second && <div className={style.underline2}></div>}
-      {third && <div className={style.underline3}></div>}
-      {fourth && <div className={style.underline4}></div>} */}
     </div>
   )
 }

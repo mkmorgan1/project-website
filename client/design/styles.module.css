@@ -23,13 +23,13 @@ body {
   align-items: center;
   min-width: 550px;
   height: 225px;
-  transition: color 1s, background-color 1s ;
+  /* transition: color 1s, background-color 1s ; */
   font-weight: 100;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .header:hover {
-  /* color: #B0EFEF; */
-  background-color:#83D9DC;
+  /* color: #1c1e22;
+  background-color:#83D9DC; */
 }
 .matthew {
   font-family: 'Bodoni Moda', serif;
@@ -91,10 +91,11 @@ body {
   border: none;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   transition: .3s ease-in-out;
+  margin-bottom: 5px;
 }
 
 /* hover */
-.project1:hover ~ .underline { margin-left: 10%; }
+.project1:hover ~ .underline { margin-left: 5%; }
 .project2:hover ~ .underline { margin-left: 30%; }
 .project3:hover ~ .underline { margin-left: 55%; }
 .project4:hover ~ .underline { margin-left: 80%; }
