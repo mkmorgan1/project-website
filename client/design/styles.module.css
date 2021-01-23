@@ -69,9 +69,7 @@ body {
     "underline underline underline underline";
   /* min-width: 400px; */
 }
-.project1, .project2, .project3, .project4  {
-  /* display: inline-block;
-  width: 50%; */
+.project {
   text-align: center;
   font-size: 20px;
 }
@@ -85,68 +83,31 @@ body {
 ============================
 */
 .underline {
-  margin-left: 5%;
   grid-area: underline;
+  align-items: center;
   height: .25rem;
   width: 15%;
   background: #C997C6;
-  padding-left:10%;
   border: none;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   transition: .3s ease-in-out;
 }
+
 /* hover */
-.project1:hover ~ .underline, .project1:focus ~ .underline {
-  margin-left: 10%;
-}
-.project2:hover ~ .underline, .project2:focus ~ .underline {
-  margin-left: 30%;
-}
-.project3:hover ~ .underline, .project3:focus ~ .underline {
-  margin-left: 55%;
-}
-.project4:hover ~ .underline, .project4:focus ~ .underline {
-  margin-left: 80%;
-}
-/* click */
-/* .project2:active ~ .underline {
+.project1:hover ~ .underline { margin-left: 10%; }
+.project2:hover ~ .underline { margin-left: 30%; }
+.project3:hover ~ .underline { margin-left: 55%; }
+.project4:hover ~ .underline { margin-left: 80%; }
+
+.project:active ~ .underline {
   background-color: #C997C6;
 }
-.project1:active ~ .underline {
-  background-color: #C997C6;
-} */
 
 .underline1 {margin-left: 5%;}
 .underline2 {margin-left: 30%;}
 .underline3 {margin-left: 55%;}
 .underline4 {margin-left: 80%;}
 
-/* .underline1, .underline2, .underline3, .underline4 {
-  grid-area: underline;
-  height: .25rem;
-  width: 15%;
-  background: #C997C6;
-  padding-left:10%;
-  border: none;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  transition: .3s ease-in-out;
-}
-
-/* hover
-.project2:hover ~ .underline1 {
-  margin-left: 30%;
-}
-.project1:hover ~ .underline2 {
-  margin-left: 10%;
-}
-
-/* click
-.project2:active ~ .underline1 {
-  background-color: #C997C6;
-}
-.project1:active ~ .underline2 {
-  background-color: #C997C6;
-} */
 
 /*
 =========================

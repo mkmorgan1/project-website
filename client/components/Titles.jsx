@@ -37,25 +37,25 @@ const Titles = () => {
   return (
     <div className={style.projectTitles}>
       <span
-        className={style.project1}
+        className={`${style.project} ${style.project1}`}
         onClick={() => toggleProjects(0)}
       >
         About Me
       </span>
       <span
-        className={style.project2}
+        className={`${style.project} ${style.project2}`}
         onClick={() => toggleProjects(1)}
       >
         Time Travel Agent
       </span>
       <span
-        className={style.project3}
+        className={`${style.project} ${style.project3}`}
         onClick={() => toggleProjects(2)}
       >
         Rating and Reviews
       </span>
       <span
-        className={style.project4}
+        className={`${style.project} ${style.project4}`}
         onClick={() => toggleProjects(3)}
       >
         Horizontally Scaling
