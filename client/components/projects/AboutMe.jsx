@@ -19,7 +19,7 @@ const AboutMe = () => {
             <b>Deployment:</b> AWS, EC2, S3
           </li>
           <li>
-            <b>Other:</b> ​Git-Workflow, Command Line Basics, trello
+            <b>Other:</b> ​Git-Workflow, Command Line Basics, Trello
           </li>
         </ul>
         <p>Personal</p>

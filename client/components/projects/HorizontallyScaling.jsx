@@ -5,22 +5,20 @@ const HorizontallyScaling = () => {
   return (
     <div className={style.videoAndDescription}>
 
-      <div className={style.description}>
+      <div className={`${style.description} ${style.descriptionWithLink}`}>
         <p align='center'>
-            <br/>
             {/* Github */}
             <a className={style.link} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
               <i className='fab fa-github-square'></i>
             </a>
           </p>
           <div className={style.discriptionDivider}></div>
-          {/* <div className={style.descriptionHeaderBox}> */}
           <h2 className={style.descriptionHeader}>
             Horizontal Scaling of an Application
           </h2>
 
         {/* </div> */}
-        <p>Loaded 10,000,000 records into a Neo4j and PostgreSQL database and horozontaly scaled the application to handle 20 times more requests per second</p>
+        <p>Loaded 10,000,000 records into a Neo4j and PostgreSQL database and horizontally scaled the application to handle 20 times more requests per second</p>
         <ul>
           <li>
             Testing locally with postman, <b>Neo4j</b> was faster than <b>PostgreSQL</b>
@@ -32,7 +30,7 @@ const HorizontallyScaling = () => {
             Launched and Implemented multiple ​<b>nginx​ ​ec2​ load-balancer</b> instances to direct traffic to ​<b>ec2</b>​ copies of the application
           </li>
           <li>
-            Stress-Tested launched applicaiton with <b>Loader.io</b> while cross-refrencing <b>NewRelic</b>
+            Stress-Tested launched application with <b>Loader.io</b> while cross-referencing <b>NewRelic</b>
           </li>
           <li>
             Horizontally scaled the application to handle ​<b>1000 requests per second​</b> to average at <b>806 ms</b> per response
