@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "start-dev": "nodemon server/start.js",
     "start": "node server/start.js",
+    "start:dev": "nodemon server/start.js",
+    "start:pm2": "pm2 start ./server/index.js",
+    "stop:pm2": "pm2 stop ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

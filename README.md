@@ -8,6 +8,13 @@ Shows a couple of projects I have been working on
 ```
 ## Run
 
+Node
 ```bash
   npm start
+```
+
+PM2
+```bash
+  npm run-script start:pm2
+  npm run-script stop:pm2
 ```
