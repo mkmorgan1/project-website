@@ -12,7 +12,7 @@ const RatingsAndReviews = () => {
           </a>
           {/* Deployed Link */}
           <a className={style.link} href='http://ec2-3-129-207-8.us-east-2.compute.amazonaws.com:3006/20' target='blank'>
-            <i class="fas fa-link"></i>
+            <i className="fas fa-external-link-square-alt"></i>
           </a>
         </p>
         <div className={style.discriptionDivider}></div>
