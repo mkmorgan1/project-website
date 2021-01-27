@@ -32,6 +32,7 @@ const App = () => {
       {second && <TimeTravelAgent />}
       {third && <RatingsAndReviews />}
       {fourth && <HorizontallyScaling />}
+      <div className={style.divider}></div>
     </div>
   )
 }
