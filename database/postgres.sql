@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS website_data;
 CREATE DATABASE website_data;
 -- USE website_data;
-\c related_products
+\c website_data
 
 CREATE TABLE interaction (
   date VARCHAR (30) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE interaction (
 
 CREATE TABLE stats (
   link VARCHAR (30) NOT NULL,
-  count VARCHAR smallint
+  count smallint NOT NULL
 );
 
 -- psql postgres < database/postgres.sql

@@ -1,4 +1,3 @@
-
 import express from 'express';
 import cors from 'cors';
 import https from 'https';
@@ -6,6 +5,7 @@ import http from 'http';
 import path from 'path';
 import fs from 'fs';
 import bodyParser from 'body-parser';
+import { getPostgres, postPostgres } from '../database/index.js';
 
 // create new express app and save it as "app"
 const app = express();

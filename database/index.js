@@ -3,7 +3,7 @@ import { Client, Pool } from 'pg';
 const postgres = new Client({
   host: 'localhost',
   user: 'matt',
-  database: 'related_products'
+  database: 'website_data'
 });
 postgres.connect();
 
