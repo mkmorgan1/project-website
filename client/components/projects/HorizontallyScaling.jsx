@@ -1,5 +1,6 @@
 import React from 'react';
 import style from '../../design/styles.module.css';
+import { clicked } from '../Functions.jsx';
 
 const HorizontallyScaling = () => {
   return (
@@ -8,7 +9,7 @@ const HorizontallyScaling = () => {
       <div className={style.description}>
         <p align='center'>
             {/* Github */}
-            <a className={style.link} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
+            <a className={style.link} onClick={() => clicked('backend github')} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>
               <i className='fab fa-github-square'></i>
             </a>
           </p>

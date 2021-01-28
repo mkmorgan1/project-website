@@ -1,5 +1,6 @@
 import React from 'react';
 import style from '../../design/styles.module.css';
+import { clicked } from '../Functions.jsx';
 
 const RatingsAndReviews = () => {
   return (
@@ -7,11 +8,11 @@ const RatingsAndReviews = () => {
       <div className={style.description}>
         <p align='center'>
           {/* Github */}
-          <a className={style.link} href='https://github.com/Mormont-team-6/Customer-Reviews-Service' target='blank'>
+          <a className={style.link} onClick={() => clicked('front end github')} href='https://github.com/Mormont-team-6/Customer-Reviews-Service' target='blank'>
             <i className='fab fa-github-square'></i>
           </a>
           {/* Deployed Link */}
-          <a className={style.link} href='http://ec2-3-129-207-8.us-east-2.compute.amazonaws.com:3006/20' target='blank'>
+          <a className={style.link} onClick={() => clicked('front end deployed')} href='http://ec2-3-129-207-8.us-east-2.compute.amazonaws.com:3006/20' target='blank'>
             <i className="fas fa-external-link-square-alt"></i>
           </a>
         </p>

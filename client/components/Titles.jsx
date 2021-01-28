@@ -3,6 +3,7 @@ import style from '../design/styles.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { select1, select2, select3, select4 } from './actions/titleSelectorActions.js';
 import { und1, und2, und3, und4 } from './actions/underlineClassActions.js';
+import { clicked } from './Functions.jsx';
 
 const Titles = () => {
   const first = useSelector(state => state.first);
@@ -38,25 +39,37 @@ const Titles = () => {
     <div className={style.projectTitles}>
       <span
         className={`${style.project} ${style.project1}`}
-        onClick={() => toggleProjects(0)}
+        onClick={() => {
+          toggleProjects(0);
+          clicked('about me');
+        }}
       >
         About Me
       </span>
       <span
         className={`${style.project} ${style.project2}`}
-        onClick={() => toggleProjects(1)}
+        onClick={() => {
+          toggleProjects(1);
+          clicked('phaser 3');
+        }}
       >
         Phaser 3
       </span>
       <span
         className={`${style.project} ${style.project3}`}
-        onClick={() => toggleProjects(2)}
+        onClick={() => {
+          toggleProjects(2);
+          clicked('front End');
+        }}
       >
         Front End
       </span>
       <span
         className={`${style.project} ${style.project4}`}
-        onClick={() => toggleProjects(3)}
+        onClick={() => {
+          toggleProjects(3);
+          clicked('scaling and back end');
+        }}
       >
         Scaling and Back End
       </span>

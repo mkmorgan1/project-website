@@ -8,7 +8,6 @@ import TimeTravelAgent from './projects/TimeTravelAgent.jsx';
 import HorizontallyScaling from './projects/HorizontallyScaling.jsx';
 import { useSelector } from 'react-redux';
 
-
 const App = () => {
   const first = useSelector(state => state.first);
   const second = useSelector(state => state.second);

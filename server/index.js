@@ -5,17 +5,31 @@ import https from 'https';
 import http from 'http';
 import path from 'path';
 import fs from 'fs';
+import bodyParser from 'body-parser';
 
 // create new express app and save it as "app"
 const app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.get('/data', (req,res) => {
-  res.send('data get');
+
+  // if (!Date.now) {
+  //   Date.now = function() { res.send( new Date().getTime()) }
+  //   Date.now();
+  // } else {
+  //   res.send(`data get ${Date.now()}`);
+  // }
 });
 app.post('/data', (req, res) => {
-  res.send('data post');
+  let d = new Date(Date.now());
+  const date = d.toString();
+  const link = req.query.link;
+  console.log(`${link} ${date}`)
+  res.end();
+
 })
 
 // Listen both http & https ports
