@@ -8,7 +8,7 @@ const postgres = new Client({
 postgres.connect();
 
 export const postPostgres = (date, link, callback) => {
-  const postInteraction = `INSERT into interaction (date, link) VALUES ($1, $2)`
+  const postInteraction = `INSERT into interaction (date, link) VALUES ($1, $2)`;
   postgres.query(postInteraction, [date, link],(err, res) => {
     if (err) {
       callback('err');
@@ -16,10 +16,10 @@ export const postPostgres = (date, link, callback) => {
       callback(null, res);
     }
   })
-}
+};
 
 export const getPostgres = (callback) => {
-  const getInteraction = `SELECT * FROM interaction`
+  const getInteraction = `SELECT * FROM interaction`;
   postgres.query(getInteraction, (err, res) => {
     if (err) {
       callback('err');
@@ -27,4 +27,4 @@ export const getPostgres = (callback) => {
       callback(null, res);
     }
   })
-}
+};
