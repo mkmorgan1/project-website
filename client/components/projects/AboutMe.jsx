@@ -36,7 +36,7 @@ const AboutMe = () => {
       </div>
 
       <div className={style.videoBox}>
-        <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/IMG_0966.jpg" alt="Matthew Morgan"/>
+        <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/MatthewMorgan.webp" alt="Matthew Morgan"/>
       </div>
 
     </div>
