@@ -5,7 +5,7 @@ const HorizontallyScaling = () => {
   return (
     <div className={style.videoAndDescription}>
 
-      <div className={`${style.description} ${style.descriptionWithLink}`}>
+      <div className={style.description}>
         <p align='center'>
             {/* Github */}
             <a className={style.link} href='https://https://github.com/HRR49Team8/amazonRelatedProducts.com/mkmorgan1' target='blank'>

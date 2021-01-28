@@ -4,7 +4,7 @@ import style from '../../design/styles.module.css';
 const TimeTravelAgent = () => {
   return (
     <div className={style.videoAndDescription}>
-      <div className={`${style.description} ${style.descriptionWithLink}`}>
+      <div className={style.description}>
         <p align='center'>
           {/* Github */}
           <a className={style.link} href='https://github.com/mkmorgan1/time-travel-agent' target='blank'>

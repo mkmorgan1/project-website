@@ -38,10 +38,11 @@ body {
   font-size: 50px;
   letter-spacing: 7px;
   text-rendering: geometricPrecision;
-  /* font-weight: 500; */
 }
 .matthewTitle {
-  margin-top: -10px;
+  margin-top: -20px;
+  font-weight: 300;
+  font-size: 25px;
   text-rendering: geometricPrecision;
   font-style: italic;
 }
@@ -148,7 +149,8 @@ body {
 /* Description */
 p {
   font-style: italic;
-  padding-left: 20px;
+  font-weight: 300;
+  text-align: center;
 }
 li {
   font-weight: 300;

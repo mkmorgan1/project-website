@@ -4,7 +4,7 @@ import style from '../../design/styles.module.css';
 const RatingsAndReviews = () => {
   return (
     <div className={style.videoAndDescription}>
-      <div className={`${style.description} ${style.descriptionWithLink}`}>
+      <div className={style.description}>
         <p align='center'>
           {/* Github */}
           <a className={style.link} href='https://github.com/Mormont-team-6/Customer-Reviews-Service' target='blank'>
