@@ -39,7 +39,7 @@ const HorizontallyScaling = () => {
       </div>
 
       <div className={style.videoBox}>
-        <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/Screen+Shot+2020-12-18+at+8.18.29+PM.png" alt="Horozantal scaling"/>
+        <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/horizontal.webp" alt="Horozantal scaling"/>
       </div>
 
     </div>
