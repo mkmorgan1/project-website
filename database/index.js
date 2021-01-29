@@ -1,8 +1,8 @@
 import { Client, Pool } from 'pg';
 
 const postgres = new Client({
-  host: 'localhost',
-  user: 'matt',
+  host: process.env.PG_HOST,//'localhost',
+  user: process.env.PG_USER,//'matt',
   database: 'website_data'
 });
 postgres.connect();
