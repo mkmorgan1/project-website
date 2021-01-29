@@ -6,6 +6,7 @@ import AboutMe from './projects/AboutMe.jsx';
 import RatingsAndReviews from './projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from './projects/TimeTravelAgent.jsx';
 import HorizontallyScaling from './projects/HorizontallyScaling.jsx';
+import Contact from './Contact.jsx';
 import { useSelector } from 'react-redux';
 import { clicked } from './Functions.jsx';
 
@@ -37,6 +38,7 @@ const App = () => {
       {third && <RatingsAndReviews />}
       {fourth && <HorizontallyScaling />}
       <div className={style.divider}></div>
+      <Contact />
     </div>
   )
 }

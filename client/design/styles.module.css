@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 400px;
   background-image: url('https://matthew-resume-website.s3.us-east-2.amazonaws.com/debut-dark.png');
-  background-color: #3a3b39;
+  background-color: #3a3b39e8;
   margin: -10px;
 }
 *:focus {outline:none}
@@ -197,4 +197,25 @@ video, img {
 }
 video:hover, img:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0) 0px 8px 4px, rgba(0, 0, 0, 0) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+}
+
+/*
+=========================
+  Contact
+=========================
+*/
+.contact {
+  color: #fafbf688;
+  text-align: center;
+}
+small {
+  display: block;
+}
+.email {
+  color: #fafbf688;
+  text-decoration: none;
+}
+.email:hover {
+  color: #fafbf6a9;
+  text-decoration: underline;
 }
