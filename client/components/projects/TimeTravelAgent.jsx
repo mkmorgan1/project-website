@@ -36,7 +36,10 @@ const TimeTravelAgent = () => {
       </div>
       <div className={style.videoBox}>
         <video autoPlay muted loop id='myVideo'>
-          <source src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/timeTravel.webm' type='video/mp4'/>
+          <source
+            src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/timeTravelAgent.mov'
+            // https://matthew-resume-website.s3.us-east-2.amazonaws.com/timeTravel.webm
+            type='video/mp4'/>
           Your browser does not support HTML5 video.
         </video>
       </div>
