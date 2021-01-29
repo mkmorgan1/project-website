@@ -8,11 +8,11 @@ const TimeTravelAgent = () => {
       <div className={style.description}>
         <p align='center'>
           {/* Github */}
-          <a className={style.link} onClick={() => clicked('phaser 3 github')} href='https://github.com/mkmorgan1/time-travel-agent' target='blank'>
+          <a className={style.link} onClick={() => clicked('phaserGithub')} href='https://github.com/mkmorgan1/time-travel-agent' target='blank'>
             <i className='fab fa-github-square'></i>
           </a>
           {/* Deployed Link */}
-          <a className={style.link} onClick={() => clicked('deployed github')}  href='http://18.188.55.38:8000/' target='blank'>
+          <a className={style.link} onClick={() => clicked('phaserDeployed')}  href='http://18.188.55.38:8000/' target='blank'>
             <i className='fas fa-gamepad'></i>
           </a>
         </p>

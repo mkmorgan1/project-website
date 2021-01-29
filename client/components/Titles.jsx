@@ -41,7 +41,7 @@ const Titles = () => {
         className={`${style.project} ${style.project1}`}
         onClick={() => {
           toggleProjects(0);
-          clicked('about me');
+          clicked('aboutMe');
         }}
       >
         About Me
@@ -50,7 +50,7 @@ const Titles = () => {
         className={`${style.project} ${style.project2}`}
         onClick={() => {
           toggleProjects(1);
-          clicked('phaser 3');
+          clicked('phaser');
         }}
       >
         Phaser 3
@@ -59,7 +59,7 @@ const Titles = () => {
         className={`${style.project} ${style.project3}`}
         onClick={() => {
           toggleProjects(2);
-          clicked('front End');
+          clicked('frontEnd');
         }}
       >
         Front End
@@ -68,7 +68,7 @@ const Titles = () => {
         className={`${style.project} ${style.project4}`}
         onClick={() => {
           toggleProjects(3);
-          clicked('scaling and back end');
+          clicked('backEnd');
         }}
       >
         Scaling and Back End
