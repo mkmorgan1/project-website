@@ -15,21 +15,27 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/data', (req,res) => {
-
-  // if (!Date.now) {
-  //   Date.now = function() { res.send( new Date().getTime()) }
-  //   Date.now();
-  // } else {
-  //   res.send(`data get ${Date.now()}`);
-  // }
+  getPostgres((err, result) => {
+    if (err) {
+      res.status(404).send(err);
+    } else {
+      res.status(200).send(result.rows);
+    }
+  })
 });
+
 app.post('/data', (req, res) => {
   let d = new Date(Date.now());
   const date = d.toString();
   const link = req.query.link;
-  console.log(`${link} ${date}`)
-  res.end();
-
+  postPostgres(date, link, (err, result) => {
+    if (err) {
+      console.log(err);
+      res.status(404).send(err);
+    } else {
+      res.status(200).end();
+    }
+  });
 })
 
 // Listen both http & https ports

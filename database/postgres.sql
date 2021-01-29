@@ -4,7 +4,7 @@ CREATE DATABASE website_data;
 \c website_data
 
 CREATE TABLE interaction (
-  date VARCHAR (30) NOT NULL,
+  date VARCHAR (70) NOT NULL,
   link VARCHAR (30) NOT NULL
 );
 

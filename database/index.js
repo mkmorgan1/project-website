@@ -11,7 +11,7 @@ export const postPostgres = (date, link, callback) => {
   const postInteraction = `INSERT into interaction (date, link) VALUES ($1, $2)`;
   postgres.query(postInteraction, [date, link],(err, res) => {
     if (err) {
-      callback('err');
+      callback(err);
     } else {
       callback(null, res);
     }
