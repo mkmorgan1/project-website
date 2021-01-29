@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from '../design/styles.module.css';
 import Titles from './Titles.jsx';
 import Links from './Links.jsx';
@@ -7,12 +7,17 @@ import RatingsAndReviews from './projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from './projects/TimeTravelAgent.jsx';
 import HorizontallyScaling from './projects/HorizontallyScaling.jsx';
 import { useSelector } from 'react-redux';
+import { clicked } from './Functions.jsx';
 
 const App = () => {
   const first = useSelector(state => state.first);
   const second = useSelector(state => state.second);
   const third = useSelector(state => state.third);
   const fourth = useSelector(state => state.fourth);
+
+  useEffect(() => {
+    clicked('website open');
+  }, []);
 
   return (
     <div>
