@@ -1,6 +1,6 @@
 import express from 'express';
 // import cors from 'cors';
-import httpolyglot from 'httpolyglot';
+// import httpolyglot from 'httpolyglot';
 import https from 'https';
 import http from 'http';
 import path from 'path';
@@ -63,10 +63,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-httpolyglot.createServer(options, app).listen(80);
-
-// http.createServer(app).listen(80, () => console.log('HTTP Server running on port 80'));
-// https.createServer(options, app).listen(443, () => console.log('HTTPS Server running on port 443'));
+// httpolyglot.createServer(options, app).listen(80);
+http.createServer(app).listen(80, () => console.log('HTTP Server running on port 80'));
+https.createServer(options, app).listen(443, () => console.log('HTTPS Server running on port 443'));
 
 
 
