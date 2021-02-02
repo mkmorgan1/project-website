@@ -14,6 +14,19 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+  console.log(process.env.NODE_ENV);
+        if (req.headers.host === 'matthewkerrymorgan.com') {
+          return res.redirect(301, 'https://www.matthewkerrymorgan.com');
+        }
+        if (req.headers['x-forwarded-proto'] !== 'https') {
+          return res.redirect('https://' + req.headers.host + req.url);
+        } else {
+          return next();
+        }
+          return next();
+});
+
 app.get('/data', (req,res) => {
   getPostgres((err, result) => {
     if (err) {
@@ -59,19 +72,6 @@ const httpsServer = https.createServer({
 
 httpsServer.listen(443, () => {
   console.log('HTTPS Server running on port 443');
-});
-
-app.use((req, res, next) => {
-  console.log(process.env.NODE_ENV);
-        if (req.headers.host === 'matthewkerrymorgan.com') {
-          return res.redirect(301, 'https://www.matthewkerrymorgan.com');
-        }
-        if (req.headers['x-forwarded-proto'] !== 'https') {
-          return res.redirect('https://' + req.headers.host + req.url);
-        } else {
-          return next();
-        }
-          return next();
 });
 
 httpServer.listen(80, () => {
