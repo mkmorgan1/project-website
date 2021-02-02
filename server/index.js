@@ -56,6 +56,9 @@ app.delete('/data', (req, res) => {
 //   key: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/privkey.pem'), //'./generated-private-key.pem')),
 //   cert: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/fullchain.pem'), //'./generated-csr.pem')),
 // }, app);
+app.listen(80, () => {
+  console.log('Express Server running on port 80');
+});
 
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/privkey.pem'),
@@ -66,9 +69,7 @@ httpsServer.listen(443, () => {
   console.log('HTTPS Server running on port 443');
 });
 
-app.listen(80, () => {
-  console.log('Express Server running on port 80');
-});
+
 
 
 
