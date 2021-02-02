@@ -14,16 +14,6 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('*', (req, res, next) => {
-  console.log(process.env.NODE_ENV);
-        if (req.headers.host === 'matthewkerrymorgan.com') {
-          res.redirect("https://www.matthewkerrymorgan.com");
-          next();
-        } else {
-          next();
-        }
-});
-
 app.get('/data', (req,res) => {
   getPostgres((err, result) => {
     if (err) {
