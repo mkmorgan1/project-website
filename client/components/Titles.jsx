@@ -36,7 +36,11 @@ const Titles = () => {
   }
 
   return (
-    <div className={style.projectTitles}>
+    <div className={
+      `${style.projectTitles}
+      ${(!first && !second && !third && !fourth) ?
+        style.welcomeProjectTitles : ''
+      }`}>
       <span
         className={`${style.project} ${style.project1}`}
         onClick={() => {
@@ -44,7 +48,7 @@ const Titles = () => {
           clicked('aboutMe');
         }}
       >
-        About Me
+        {`About Me`}
       </span>
       <span
         className={`${style.project} ${style.project2}`}
@@ -71,9 +75,9 @@ const Titles = () => {
           clicked('backEnd');
         }}
       >
-        Scaling and Back End
+        Back End
       </span>
-      <div className={`${style.underline} ${style[underlineClass]}`}></div>
+      {(first || second || third || fourth) && <div className={`${style.underline} ${style[underlineClass]}`}></div>}
     </div>
   )
 }

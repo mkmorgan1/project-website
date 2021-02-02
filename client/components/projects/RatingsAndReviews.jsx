@@ -33,16 +33,17 @@ const RatingsAndReviews = () => {
             Used a <b>Mysql</b>​ ​database because its relational structure allowed a connection between a ratings and a reviews table
           </li>
         </ul>
+        <div className={style.videoBox}>
+          <video autoPlay muted loop id='myVideo'>
+            <source
+            src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/ratings-%26-Reviews.mov'
+            // 'https://matthew-resume-website.s3.us-east-2.amazonaws.com/r%26r.webm'
+            type='video/mp4'/>
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
       </div>
-      <div className={style.videoBox}>
-        <video autoPlay muted loop id='myVideo'>
-          <source
-          src='https://matthew-resume-website.s3.us-east-2.amazonaws.com/ratings-%26-Reviews.mov'
-          // 'https://matthew-resume-website.s3.us-east-2.amazonaws.com/r%26r.webm'
-          type='video/mp4'/>
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
+
     </div>
   )
 }

@@ -23,22 +23,28 @@ const App = () => {
   return (
     <div>
       <div className={style.headerBox}>
-        <div className={style.header}>
-          <h1 className={style.matthew}>Matthew Morgan</h1>
-          <h3 className={style.matthewTitle}>Full-Stack Software Engineer</h3>
-          <Links />
+        <div className={`${style.header} ${
+          (!first && !second && !third && !fourth) ? style.welcome : ''}`} >
+          <div className={style.welcomeHeader}>
+            <h1 className={style.matthew}>Matthew Morgan</h1>
+            <h3 className={style.matthewTitle}>Full-Stack Software Engineer</h3>
+            <Links />
+          </div>
+          {(!first && !second && !third && !fourth) && <Titles />}
         </div>
       </div>
+      {(first || second || third || fourth) &&
       <div>
-      </div>
-      <Titles />
-      <div className={style.divider}></div>
-      {first && <AboutMe />}
-      {second && <TimeTravelAgent />}
-      {third && <RatingsAndReviews />}
-      {fourth && <HorizontallyScaling />}
-      <div className={style.divider}></div>
-      <Contact />
+        <Titles />
+        <div className={style.divider}></div>
+        {first && <AboutMe />}
+        {second && <TimeTravelAgent />}
+        {third && <RatingsAndReviews />}
+        {fourth && <HorizontallyScaling />}
+
+      </div>}
+        <div className={style.divider}></div>
+        <Contact />
     </div>
   )
 }

@@ -37,12 +37,10 @@ const HorizontallyScaling = () => {
             Horizontally scaled the application to handle ​<b>1000 requests per second​</b> to average at <b>806 ms</b> per response
           </li>
         </ul>
+        <div className={style.videoBox}>
+          <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/horizontal.webp" alt="Horozantal scaling"/>
+        </div>
       </div>
-
-      <div className={style.videoBox}>
-        <img src="https://matthew-resume-website.s3.us-east-2.amazonaws.com/horizontal.webp" alt="Horozantal scaling"/>
-      </div>
-
     </div>
   )
 }

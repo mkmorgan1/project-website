@@ -1,4 +1,4 @@
-export const toggleFirst = (state = true, action) => {
+export const toggleFirst = (state = false, action) => {
   switch(action.type) {
     case 'SELECT1':
       return !state;

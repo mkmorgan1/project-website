@@ -1,4 +1,4 @@
-const underlineClass = (state = 'underline1', action) => {
+const underlineClass = (state = '', action) => {
   switch(action.type) {
     case 'UNDERLINE_1':
       return state = 'underline1';
