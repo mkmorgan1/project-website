@@ -58,7 +58,9 @@ const options = {
 
 app.use(function(req, res, next) {
   if (!req.secure ) {
-    res.redirect (301, 'https://' + req.hostname + ':port' + req.originalUrl);
+    console.log({ "Location": "https://" + req.headers['host'] + req.url });
+    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+    // res.redirect (301, 'https://' + req.hostname + ':port' + req.originalUrl);
   }
   next();
 });
