@@ -5,7 +5,7 @@ import http from 'http';
 import path from 'path';
 import fs from 'fs';
 import bodyParser from 'body-parser';
-import { getPostgres, postPostgres } from '../database/index.js';
+import { getPostgres, postPostgres, deletePostgres } from '../database/index.js';
 
 // create new express app and save it as "app"
 const app = express();
@@ -36,6 +36,17 @@ app.post('/data', (req, res) => {
       res.status(200).end();
     }
   });
+})
+
+app.delete('/data', (req, res) => {
+  deletePostgres((err, result) => {
+    if (err) {
+      console.log(err);
+      res.status(404).send(err);
+    } else {
+      res.status(200).end();
+    }
+  })
 })
 
 // Listen both http & https ports

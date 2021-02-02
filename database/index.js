@@ -11,21 +11,20 @@ postgres.connect();
 export const postPostgres = (date, link, callback) => {
   const postInteraction = `INSERT into interaction (date, link) VALUES ($1, $2)`;
   postgres.query(postInteraction, [date, link],(err, res) => {
-    if (err) {
-      callback(err);
-    } else {
-      callback(null, res);
-    }
+    err ? callback(err) : callback(null, res);
   })
 };
 
 export const getPostgres = (callback) => {
   const getInteraction = `SELECT * FROM interaction`;
   postgres.query(getInteraction, (err, res) => {
-    if (err) {
-      callback('err');
-    } else {
-      callback(null, res);
-    }
+    err ? callback(err) : callback(null, res);
   })
 };
+
+export const deletePostgres = (callback) => {
+  const deleteInteraction = `DELETE FROM INTERACTION`;
+  postgres.query(deleteInteraction, (err, res) => {
+    err ? callback(err) : callback(null, res);
+  })
+}
