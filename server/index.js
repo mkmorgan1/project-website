@@ -17,13 +17,11 @@ app.use(bodyParser.json());
 app.use((req, res, next) => {
   console.log(process.env.NODE_ENV);
         if (req.headers.host === 'matthewkerrymorgan.com') {
-          res.redirect(301, 'https://www.matthewkerrymorgan.com');
-        } else if (req.headers['x-forwarded-proto'] !== 'https') {
-          res.redirect('https://' + req.headers.host + req.url);
+          windows.location = "https://www.matthewkerrymorgan.com";
+          next();
         } else {
           next();
         }
-          next();
 });
 
 app.get('/data', (req,res) => {
