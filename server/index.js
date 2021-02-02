@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import https from 'https';
 import http from 'http';
 import path from 'path';
@@ -9,7 +9,7 @@ import { getPostgres, postPostgres, deletePostgres } from '../database/index.js'
 
 // create new express app and save it as "app"
 const app = express();
-app.use(cors());
+// app.use(cors());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
