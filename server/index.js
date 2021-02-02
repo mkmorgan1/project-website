@@ -52,7 +52,6 @@ app.delete('/data', (req, res) => {
 // Listen both http & https ports
 const httpServer = http.createServer(app);
 
-/*
 const httpsServer = https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/privkey.pem'), //'./generated-private-key.pem')),
   cert: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/fullchain.pem'), //'./generated-csr.pem')),
@@ -63,19 +62,17 @@ httpsServer.listen(443, () => {
 });
 
 app.use((req, res, next) => {
-    if (process.env.NODE_ENV === 'production') {
-        if (req.headers.host === 'matthewkerrymorgan.com')
-            return res.redirect(301, 'https://www.matthewkerrymorgan.com');
-        if (req.headers['x-forwarded-proto'] !== 'https')
-            return res.redirect('https://' + req.headers.host + req.url);
-        else
-            return next();
-    } else
-        return next();
+  console.log(process.env.NODE_ENV);
+        if (req.headers.host === 'matthewkerrymorgan.com') {
+          return res.redirect(301, 'https://www.matthewkerrymorgan.com');
+        }
+        if (req.headers['x-forwarded-proto'] !== 'https') {
+          return res.redirect('https://' + req.headers.host + req.url);
+        } else {
+          return next();
+        }
+          return next();
 });
-
-*/
-
 
 httpServer.listen(80, () => {
   console.log('HTTP Server running on port 80');
