@@ -1,13 +1,12 @@
 import express from 'express';
-// import httpolyglot from 'httpolyglot';
 import https from 'https';
 import http from 'http';
 import path from 'path';
 import fs from 'fs';
 import bodyParser from 'body-parser';
 import { getPostgres, postPostgres, deletePostgres } from '../database/index.js';
+import dateNow from './date.js';
 
-// create new express app and save it as "app"
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,10 +23,8 @@ app.get('/data', (req,res) => {
 });
 
 app.post('/data', (req, res) => {
-  let d = new Date(Date.now());
-  const date = d.toString();
   const link = req.query.link;
-  postPostgres(date, link, (err, result) => {
+  postPostgres(dateNow(), link, (err, result) => {
     if (err) {
       console.log(err);
       res.status(404).send(err);
@@ -43,7 +40,7 @@ app.delete('/data', (req, res) => {
       console.log(err);
       res.status(404).send(err);
     } else {
-      res.status(200).send(`DELETED ${result.rowCount} rows`);
+      res.status(200).send(`DELETED ${result.rowCount} ROWS`);
     }
   })
 })
