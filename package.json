@@ -9,7 +9,7 @@
     "start:dev": "nodemon server/start.js",
     "start:pm2": "pm2 start ./server/start.js",
     "stop:pm2": "pm2 stop ./server/start.js",
-    "test": "jest tests"
+    "test": "jest tests --watchAll"
   },
   "repository": {
     "type": "git",
@@ -55,7 +55,7 @@
     "moduleFileExtensions": ["js", "jsx"],
     "moduleDirectories": ["node_modules"],
     "moduleNameMapper": {
-      "\\.(css|less)$": "<rootDir>/client/designs/style.module.css"
+      "\\.(css|less)$": "<rootDir>/tests/__mocks__/styleMock.js"
     }
   }
 }
