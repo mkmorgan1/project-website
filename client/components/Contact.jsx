@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../design/styles.module.css';
-import { clicked } from './Functions.jsx';
+import { clicked } from './functions.js';
 
 const Contact = () => {
   return (
