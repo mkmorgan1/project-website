@@ -79,7 +79,7 @@ const Titles = () => {
       </span>
       {(first || second || third || fourth) && <div className={`${style.underline} ${style[underlineClass]}`}></div>}
     </div>
-  )
+  );
 }
 
 export default Titles;

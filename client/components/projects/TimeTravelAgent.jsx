@@ -44,7 +44,7 @@ const TimeTravelAgent = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default TimeTravelAgent;

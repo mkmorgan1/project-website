@@ -17,7 +17,7 @@ const Contact = () => {
       </small>
       <br/>
     </div>
-  )
+  );
 }
 
 export default Contact;

@@ -45,7 +45,7 @@ const RatingsAndReviews = () => {
       </div>
 
     </div>
-  )
+  );
 }
 
 export default RatingsAndReviews;

@@ -8,7 +8,7 @@ import AboutMe from '../client/components/projects/AboutMe.jsx';
 import HorizontallyScaling from '../client/components/projects/HorizontallyScaling.jsx';
 import RatingsAndReviews from '../client/components/projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from '../client/components/projects/TimeTravelAgent.jsx';
-import * as redux from 'react-redux'
+import * as redux from 'react-redux';
 
 /*  HANDLES REACT ERRORS WITH MUTED VIDEOS IN JEST  */
 Object.defineProperty(HTMLMediaElement.prototype, 'muted', {
@@ -34,7 +34,7 @@ const useSelectorMock = jest.spyOn(redux, 'useSelector')
     fourth: false,
   });
 const useDispatchMock = jest.spyOn(redux, 'useDispatch')
-  .mockReturnValue(jest.fn())
+  .mockReturnValue(jest.fn());
 
 /* NOT SURE IF I NEED THIS 👇🏼 */
 // beforeEach(() => {

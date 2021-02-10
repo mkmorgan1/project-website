@@ -19,7 +19,7 @@ app.get('/data', (req,res) => {
     } else {
       res.status(200).send(result.rows);
     }
-  })
+  });
 });
 
 app.post('/data', (req, res) => {
@@ -32,7 +32,7 @@ app.post('/data', (req, res) => {
       res.status(200).end();
     }
   });
-})
+});
 
 app.delete('/data', (req, res) => {
   deletePostgres((err, result) => {
@@ -42,8 +42,8 @@ app.delete('/data', (req, res) => {
     } else {
       res.status(200).send(`DELETED ${result.rowCount} ROWS`);
     }
-  })
-})
+  });
+});
 
 // Listen both http & https ports
 http.createServer(app).listen(80, () => console.log('HTTP Server running on port 80'));
@@ -52,7 +52,7 @@ http.createServer(app).listen(80, () => console.log('HTTP Server running on port
 const options = {
   key: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/www.matthewkerrymorgan.com/fullchain.pem'),
-}
+};
 https.createServer(options, app).listen(443, () => console.log('HTTPS Server running on port 443'));
 */
 

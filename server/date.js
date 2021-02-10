@@ -13,7 +13,7 @@ week[6] = 'Saturday';
 
 const dateNow = () => {
   let d = new Date(Date.now()).addHours(-7);
-  return `${week[d.getDay()]} ${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+  return `${week[d.getDay()]} ${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
 }
 
 

@@ -46,7 +46,7 @@ const App = () => {
         <div className={style.divider}></div>
         <Contact />
     </div>
-  )
+  );
 }
 
 export default App;

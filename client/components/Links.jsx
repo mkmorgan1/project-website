@@ -18,8 +18,8 @@ const Links = () => {
         <i className='fas fa-handshake'></i>
       </a>
     </div>
-  )
+  );
 }
 
 
-export default Links
+export default Links;
