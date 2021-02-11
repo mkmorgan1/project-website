@@ -36,7 +36,6 @@ app.post('/data', (req, res) => {
   const link = req.query.link;
   postPostgres(dateNow(), link, (err, result) => {
     if (err) {
-      console.log(err);
       res.status(404).send(err);
     } else {
       res.status(200).end();
@@ -47,7 +46,6 @@ app.post('/data', (req, res) => {
 app.delete('/data', (req, res) => {
   deletePostgres((err, result) => {
     if (err) {
-      console.log(err);
       res.status(404).send(err);
     } else {
       res.status(200).send(`DELETED ${result.rowCount} ROWS`);
