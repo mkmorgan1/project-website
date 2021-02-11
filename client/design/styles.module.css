@@ -1,15 +1,13 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-width: 400px;
-  background-image: url('https://matthew-resume-website.s3.us-east-2.amazonaws.com/debut-dark.png');
+  background-image: url("https://matthew-resume-website.s3.us-east-2.amazonaws.com/debut-dark.png");
   background-color: #3a3b39e8;
   margin: -10px;
 }
-*:focus {outline:none}
-
-
-
-
+*:focus {
+  outline: none;
+}
 
 /*
 ========================
@@ -24,22 +22,26 @@ body {
 }
 .header {
   text-align: center;
-  color:#2d3136;
-  background-color: #FAFBF6;
+  color: #2d3136;
+  background-color: #fafbf6;
   padding: 10px 50px;
   align-items: center;
   min-width: 550px;
   height: 225px;
   font-weight: 100;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+    rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .welcome {
   display: grid;
   margin: 0 auto 20px;
   grid-template-columns: 25% 75%;
   grid-template-areas:
-  'titles'
-  'name';
+    "titles"
+    "name";
   padding-top: 100px;
   height: 1000px;
   min-width: 1100px;
@@ -55,14 +57,19 @@ body {
   grid-area: name;
   height: 100%;
 }
-.header, .description, video, img {
+.header,
+.description,
+video,
+img {
   transition: box-shadow 1s;
 }
-.header:hover , .description:hover {
-  box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+.header:hover,
+.description:hover {
+  box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .matthew {
-  font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 50px;
   letter-spacing: 7px;
   text-rendering: geometricPrecision;
@@ -77,10 +84,10 @@ body {
 .link {
   padding: 10px;
   font-size: 25px;
-  color:#3e434b;
+  color: #3e434b;
 }
 .link:hover {
-  color:#666E7A;
+  color: #666e7a;
 }
 
 /*
@@ -90,7 +97,7 @@ body {
 */
 
 .projectTitles {
-  color: #FAFBF6;
+  color: #fafbf6;
   width: 90%;
   max-width: 1500px;
   margin: 0 auto;
@@ -106,16 +113,24 @@ body {
 
 .project {
   /* text-align: center; */
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .project:hover {
   /* color: #C997C6 */
 }
 
-.project1{grid-area: one;}
-.project2{grid-area: two;}
-.project3{grid-area: three;}
-.project4{grid-area: four;}
+.project1 {
+  grid-area: one;
+}
+.project2 {
+  grid-area: two;
+}
+.project3 {
+  grid-area: three;
+}
+.project4 {
+  grid-area: four;
+}
 
 .welcomeProjectTitles {
   /* background-color: #FAFBF6; */
@@ -133,16 +148,15 @@ body {
   grid-area: titles;
   grid-template-columns: 75%;
   grid-template-areas:
-  "one"
-  "three"
-  "four"
-  "two";
+    "one"
+    "three"
+    "four"
+    "two";
 }
 .welcomeProjectTitles > .project {
-
 }
 .welcomeProjectTitles > .project:hover {
-  color: #C997C6
+  color: #c997c6;
 }
 /*
 ============================
@@ -152,30 +166,45 @@ body {
 .underline {
   grid-area: underline;
   align-items: center;
-  height: .25rem;
+  height: 0.25rem;
   width: 15%;
   background: #e0dcdc;
   border: none;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   margin-bottom: 5px;
 }
 
 /* hover */
-.project1:hover ~ .underline { margin-left: 5%; }
-.project2:hover ~ .underline { margin-left: 30%; }
-.project3:hover ~ .underline { margin-left: 55%; }
-.project4:hover ~ .underline { margin-left: 80%; }
-
-.project:active ~ .underline {
-  background-color: #C997C6;
+.project1:hover ~ .underline {
+  margin-left: 5%;
+}
+.project2:hover ~ .underline {
+  margin-left: 30%;
+}
+.project3:hover ~ .underline {
+  margin-left: 55%;
+}
+.project4:hover ~ .underline {
+  margin-left: 80%;
 }
 
-.underline1 {margin-left: 5%;}
-.underline2 {margin-left: 30%;}
-.underline3 {margin-left: 55%;}
-.underline4 {margin-left: 80%;}
+.project:active ~ .underline {
+  background-color: #c997c6;
+}
 
+.underline1 {
+  margin-left: 5%;
+}
+.underline2 {
+  margin-left: 30%;
+}
+.underline3 {
+  margin-left: 55%;
+}
+.underline4 {
+  margin-left: 80%;
+}
 
 /*
 =========================
@@ -183,15 +212,16 @@ body {
 =========================
 */
 
-.divider, .discriptionDivider {
+.divider,
+.descriptionDivider {
   /* background: #666e7a73; */
-  height: .1rem;
+  height: 0.1rem;
   width: 90%;
   margin: 0 auto;
   border: none;
   box-shadow: rgba(255, 254, 254, 0.1) 0px 1px 0px;
 }
-.discriptionDivider {
+.descriptionDivider {
   box-shadow: rgba(17, 17, 26, 0.705) 0px 1px 0px;
 }
 
@@ -201,7 +231,7 @@ body {
 =========================
 */
 
-.videoAndDescription{
+.videoAndDescription {
   margin: 0 auto;
   max-width: 1500px;
   padding: 20px 30px;
@@ -226,17 +256,21 @@ b {
 }
 .descriptionHeader {
   text-align: center;
-  font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .description {
   min-width: 300px;
   padding: 25px;
-  background-color: #FAFBF6;
+  background-color: #fafbf6;
   border-radius: 15px;
   height: 1000px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+    rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
   overflow: scroll;
 }
 q {
@@ -250,9 +284,9 @@ details {
 /* video or image */
 
 .videoBox {
-
 }
-video, img {
+video,
+img {
   display: block;
   align-items: center;
   margin: 10px auto;
@@ -260,10 +294,15 @@ video, img {
   max-height: 550px;
   max-width: 100%;
   transition: box-shadow 1s;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-video:hover, img:hover {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0) 0px 8px 4px, rgba(0, 0, 0, 0) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+video:hover,
+img:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0) 0px 8px 4px, rgba(0, 0, 0, 0) 0px 16px 8px,
+    rgba(0, 0, 0, 0) 0px 32px 16px;
 }
 
 /*

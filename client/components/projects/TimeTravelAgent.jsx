@@ -16,7 +16,7 @@ const TimeTravelAgent = () => {
             <i className='fas fa-gamepad'></i>
           </a>
         </p>
-        <div className={style.discriptionDivider}></div>
+        <div className={style.descriptionDivider}></div>
         <h2 className={style.descriptionHeader}>Time Travel Agent</h2>
         <p>User is a time traveler who shoots portals between the past and future to avoid obstacles.</p>
         <ul>

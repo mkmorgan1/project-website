@@ -13,7 +13,7 @@ const HorizontallyScaling = () => {
               <i className='fab fa-github-square'></i>
             </a>
           </p>
-          <div className={style.discriptionDivider}></div>
+          <div className={style.descriptionDivider}></div>
           <h2 className={style.descriptionHeader}>
             Horizontal Scaling of an Application
           </h2>

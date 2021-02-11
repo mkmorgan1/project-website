@@ -16,7 +16,7 @@ const RatingsAndReviews = () => {
             <i className="fas fa-external-link-square-alt"></i>
           </a>
         </p>
-        <div className={style.discriptionDivider}></div>
+        <div className={style.descriptionDivider}></div>
         <h2 className={style.descriptionHeader}>Ratings And Reviews</h2>
         <p>Application for a booking site</p>
         <ul>
