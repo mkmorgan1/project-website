@@ -3,7 +3,7 @@ import style from '../design/styles.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { select1, select2, select3, select4 } from './actions/titleSelectorActions.js';
 import { und1, und2, und3, und4 } from './actions/underlineClassActions.js';
-import { clicked } from './functions.js';
+import { clicked } from '../functions.js';
 
 const Titles = () => {
   const first = useSelector(state => state.first);

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as redux from 'react-redux';
 import App from '../client/components/App.jsx';
 import Contact from '../client/components/Contact.jsx';
 import Links from '../client/components/Links.jsx';
@@ -8,7 +9,7 @@ import AboutMe from '../client/components/projects/AboutMe.jsx';
 import HorizontallyScaling from '../client/components/projects/HorizontallyScaling.jsx';
 import RatingsAndReviews from '../client/components/projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from '../client/components/projects/TimeTravelAgent.jsx';
-import * as redux from 'react-redux';
+import { clicked } from '../client/functions.js';
 
 /*  HANDLES REACT ERRORS WITH MUTED VIDEOS IN JEST  */
 Object.defineProperty(HTMLMediaElement.prototype, 'muted', {
@@ -49,4 +50,10 @@ describe('Should render without crashing', () => {
       ReactDOM.render(<Module />, document.createElement('div'));
     });
   }
+});
+
+describe('Functions', () => {
+  test('', () => {
+
+  });
 });
