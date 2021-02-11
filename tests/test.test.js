@@ -28,13 +28,10 @@ const Modules = {
   RatingsAndReviews: RatingsAndReviews,
   TimeTravelAgent: TimeTravelAgent,
 }
+
 const useSelectorMock = jest.spyOn(redux, 'useSelector')
-.mockReturnValue({
-    first: false,
-    second: false,
-    third: false,
-    fourth: false,
-  });
+  .mockReturnValue(false);
+
 const useDispatchMock = jest.spyOn(redux, 'useDispatch')
   .mockReturnValue(jest.fn());
 
