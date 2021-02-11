@@ -23,14 +23,20 @@ export const getPostgres = (callback) => {
 }
 
 export const deletePostgres = (callback) => {
-  const deleteInteraction = `DELETE FROM INTERACTION`;
+  const deleteInteraction = `
+    DELETE FROM interaction
+    WHERE date = (
+      SELECT date FROM interaction
+      ORDER by date DESC
+      LIMIT 1
+    )`;
   postgres.query(deleteInteraction, (err, res) => {
     err ? callback(err) : callback(null, res);
   });
 }
 
 export const getCount = (callback) => {
-  const averageQuery =`SELECT link, COUNT(*) FROM INTERACTION GROUP BY link`;
+  const averageQuery =`SELECT link, COUNT(*) FROM interaction GROUP BY link`;
   postgres.query(averageQuery, (err, res) => {
     err ? callback(err) : callback(null, res);
   });

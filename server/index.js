@@ -6,6 +6,7 @@ import fs from 'fs';
 import bodyParser from 'body-parser';
 import { getPostgres, postPostgres, deletePostgres, getCount } from '../database/index.js';
 import dateNow from './date.js';
+import PASSWORD from './password.js';
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
@@ -44,13 +45,17 @@ app.post('/data', (req, res) => {
 });
 
 app.delete('/data', (req, res) => {
-  deletePostgres((err, result) => {
-    if (err) {
-      res.status(404).send(err);
-    } else {
-      res.status(200).send(`DELETED ${result.rowCount} ROWS`);
-    }
-  });
+  if (req.query.password === PASSWORD) {
+    deletePostgres((err, result) => {
+      if (err) {
+        res.status(404).send(err);
+      } else {
+        res.status(200).send(`DELETED ${result.rowCount} ROWS`);
+      }
+    });
+  } else {
+    res.send('PASSWORD INCORRECT');
+  }
 });
 
 // Listen both http & https ports
