@@ -4,7 +4,7 @@ import http from 'http';
 import path from 'path';
 import fs from 'fs';
 import bodyParser from 'body-parser';
-import { getPostgres, postPostgres, deletePostgres } from '../database/index.js';
+import { getPostgres, postPostgres, deletePostgres, getCount } from '../database/index.js';
 import dateNow from './date.js';
 
 const app = express();
@@ -14,6 +14,16 @@ app.use(bodyParser.json());
 
 app.get('/data', (req,res) => {
   getPostgres((err, result) => {
+    if (err) {
+      res.status(404).send(err);
+    } else {
+      res.status(200).send(result.rows);
+    }
+  });
+});
+
+app.get('/count', (req,res) => {
+  getCount((err, result) => {
     if (err) {
       res.status(404).send(err);
     } else {

@@ -29,6 +29,12 @@ export const deletePostgres = (callback) => {
   });
 }
 
+export const getCount = (callback) => {
+  const averageQuery =`SELECT link, COUNT(*) FROM INTERACTION GROUP BY link`;
+  postgres.query(averageQuery, (err, res) => {
+    err ? callback(err) : callback(null, res);
+  });
+}
 
 /* FOR TESTING */
 
