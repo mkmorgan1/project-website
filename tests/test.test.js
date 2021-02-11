@@ -10,6 +10,7 @@ import HorizontallyScaling from '../client/components/projects/HorizontallyScali
 import RatingsAndReviews from '../client/components/projects/RatingsAndReviews.jsx';
 import TimeTravelAgent from '../client/components/projects/TimeTravelAgent.jsx';
 import { clicked } from '../client/functions.js';
+import { testGetPostgres } from '../database/index.js';
 
 /*  HANDLES REACT ERRORS WITH MUTED VIDEOS IN JEST  */
 Object.defineProperty(HTMLMediaElement.prototype, 'muted', {
@@ -53,7 +54,13 @@ describe('Should render without crashing', () => {
 });
 
 describe('Functions', () => {
-  test('', () => {
-
+  xtest('clicked', () => {
+    clicked('test');
+    const result = new Promise((resolve, reject) => {
+      testGetPostgres((err, result) => {
+        err ? reject(err) : resolve(result.rows.length);
+      });
+    });
+    console.log(result);
   });
 });

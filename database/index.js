@@ -28,3 +28,13 @@ export const deletePostgres = (callback) => {
     err ? callback(err) : callback(null, res);
   });
 }
+
+
+/* FOR TESTING */
+
+export const testGetPostgres = (callback) => {
+  const testGetQuery = `SELECT * FROM INTERACTION WHERE link = ($1)`;
+  postgres.query(testGetQuery, 'test', (err, res) => {
+    err ? callback(err) : callback(null, res);
+  })
+}
