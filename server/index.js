@@ -46,16 +46,9 @@ app.post('/data', (req, res) => {
 
 app.delete('/data', (req, res) => {
   if (req.query.password === PASSWORD) {
-    let count = req.query.rows || 1;
-    while (count > 0) {
-      new Promise((resolve, reject) => {
-        deletePostgres((err, result) => {
-          err ? reject(err) : resolve();
-        });
-      }).catch(err => console.log(err));
-      count--;
-    }
-    res.status(200).send(`DELETED ${req.query.rows || 1} ROW(S)`);
+    deletePostgres((err, result) => {
+      err ? res.status(404).send(err) :res.status(200).send(`DELETED 1 ROW`);
+    });
   } else {
     res.send('PASSWORD INCORRECT');
   }
