@@ -46,7 +46,14 @@ export const getCount = (callback) => {
 
 export const testGetPostgres = (callback) => {
   const testGetQuery = `SELECT * FROM INTERACTION WHERE link = ($1)`;
-  postgres.query(testGetQuery, 'test', (err, res) => {
+  postgres.query(testGetQuery, ['test'], (err, res) => {
+    err ? callback(err) : callback(null, res);
+  })
+}
+
+export const testDeletePostgres = (callback) => {
+  const testGetQuery = `DELETE FROM INTERACTION WHERE link = ($1)`;
+  postgres.query(testGetQuery, ['test'], (err, res) => {
     err ? callback(err) : callback(null, res);
   })
 }

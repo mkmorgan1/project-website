@@ -25,6 +25,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
+    "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "css-loader": "^5.0.1",
     "express": "^4.17.1",
@@ -52,8 +53,13 @@
     "webpack-dev-server": "^3.11.2"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleNameMapper": {
       "\\.(css|less)$": "<rootDir>/tests/__mocks__/styleMock.js"
     }

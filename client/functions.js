@@ -1,9 +1,10 @@
 import $ from 'jquery';
 
-export const clicked = (value) => {
+export const clicked = (value, callback = ()=>{}) => {
   $.ajax({
     type: "POST",
     url: `/data?link=${value}`,
-    dataType: 'text'
+    dataType: 'text',
+    success: callback
   });
 }
