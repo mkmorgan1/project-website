@@ -1,6 +1,12 @@
 # projects-website
 
-Shows a couple of projects I have been working on
+## My Personal Projects Portfolio.
+
+I created this single-page application to showcase a couple of the most recent projects.
+
+- I have an AWS S3 bucket and EC2 instance for storage and deployment.
+- Changes in state and rendering are implemented through Redux and React.
+- A PostgreSQL database stores the user's interactions with the website.
 
 ## Installation
 
