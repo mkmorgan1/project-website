@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as redux from 'react-redux';
-import * as P from "bluebird";
 
 import App from '../client/components/App.jsx';
 import Contact from '../client/components/Contact.jsx';
@@ -19,7 +18,6 @@ Object.defineProperty(HTMLMediaElement.prototype, 'muted', {
   set: () => {},
 });
 
-describe('Should render without crashing', () => {
   const Modules = {
     App: App,
     Contact: Contact,
@@ -31,22 +29,22 @@ describe('Should render without crashing', () => {
     TimeTravelAgent: TimeTravelAgent,
   }
 
+describe('Should render without crashing', () => {
   const useSelectorMock = jest.spyOn(redux, 'useSelector')
     .mockReturnValue(false);
-
   const useDispatchMock = jest.spyOn(redux, 'useDispatch')
     .mockReturnValue(jest.fn());
 
-  /* NOT SURE IF I NEED THIS 👇🏼 */
+  /* NOT SURE IF I NEED THESE 👇🏼 */
   beforeEach(() => {
     useSelectorMock.mockClear();
     useDispatchMock.mockClear();
-  })
+  });
+  // afterEach(() => {
+  //   useSelectorMock.mockClear();
+  //   useDispatchMock.mockClear();
+  // });
 
-  afterEach(() => {
-    useSelectorMock.mockClear();
-    useDispatchMock.mockClear();
-  })
   for (let key in Modules) {
     test(`<${key} />`, () => {
       const Module = Modules[key];
@@ -59,7 +57,7 @@ describe('Functions', () => {
   test('clicked', () => {
     const checkForTests = () => {
       testGetPostgres((err, res) => {
-        err ? err : expect(res.rows.length).toBeGreaterThan(0);
+        err ? err : expect(res.rows.length).toEqual(0);
       });
     }
     clicked('test', testDeletePostgres((err, deleted) => {
