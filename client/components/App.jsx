@@ -34,14 +34,13 @@ const App = () => {
         </div>
       </div>
       {(first || second || third || fourth) &&
-      <div>
+      <div className={style.pageBody}>
         <Titles />
         <div className={style.divider}></div>
         {first && <AboutMe />}
         {second && <TimeTravelAgent />}
         {third && <RatingsAndReviews />}
         {fourth && <HorizontallyScaling />}
-
       </div>}
         <div className={style.divider}></div>
         <Contact />

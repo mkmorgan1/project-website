@@ -42,20 +42,12 @@ body {
   grid-template-areas:
     "titles"
     "name";
-  padding-top: 100px;
   height: 1000px;
   min-width: 1100px;
-  /* border: dashed; */
-}
-@media only screen and (min-width: 600px) {
-  .header-box {
-    margin-top: 100px;
-  }
 }
 .welcome > .welcomeHeader > {
-  /* border: dashed; */
   grid-area: name;
-  height: 100%;
+  height: 1000px;
 }
 .header,
 .description,
@@ -95,6 +87,10 @@ img {
   Titles for project names
 ============================
 */
+.pageBody {
+  min-width: 100%;
+  /* margin: 0 auto; */
+}
 
 .projectTitles {
   color: #fafbf6;
@@ -103,8 +99,8 @@ img {
   margin: 0 auto;
   text-align: center;
   display: grid;
-  /* font-size: 20px; */
-  font-size: 1.5vw;
+  font-size: 20px;
+  /* font-size: 2vw; */
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
     "one two three four"
@@ -112,14 +108,9 @@ img {
 }
 
 .project {
-  /* text-align: center; */
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-.project:hover {
-  /* color: #C997C6 */
-}
-
 .project1 {
   grid-area: one;
 }
@@ -134,18 +125,12 @@ img {
 }
 
 .welcomeProjectTitles {
-  /* background-color: #FAFBF6; */
-  /* border-radius: 15px; */
-  /* font-family: 'Bodoni Moda', serif; */
-  /* font-weight: 500; */
   color: #2d3136;
-
   font-size: 40px;
   padding: 40px;
   min-height: 550px;
-  /* color: #FAFBF6; */
   line-height: 100px;
-  text-align: right;
+  text-align: left;
   grid-area: titles;
   grid-template-columns: 75%;
   grid-template-areas:
@@ -158,6 +143,7 @@ img {
 }
 .welcomeProjectTitles > .project:hover {
   color: #c997c6;
+  margin-left: 10px;
 }
 /*
 ============================
@@ -215,7 +201,6 @@ img {
 
 .divider,
 .descriptionDivider {
-  /* background: #666e7a73; */
   height: 0.1rem;
   width: 90%;
   margin: 0 auto;
@@ -236,8 +221,6 @@ img {
   margin: 0 auto;
   max-width: 1500px;
   padding: 20px 30px;
-  /* display: grid;
-  grid-template-columns: 35% 65%; */
 }
 
 /* Description */
@@ -266,7 +249,7 @@ b {
   padding: 25px;
   background-color: #fafbf6;
   border-radius: 15px;
-  height: 1000px;
+  min-height: 1000px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
     rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -325,4 +308,18 @@ small {
 .email:hover {
   color: #fafbf6a9;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    /* min-width: none; */
+  }
+  .welcome {
+    /* border: dashed;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "name"
+      "titles";
+    height: 100%; */
+  }
 }
