@@ -14,7 +14,7 @@ const Links = () => {
         <i className='fab fa-linkedin'></i>
       </a>
       {/* Resume */}
-      <a className={style.link} onClick={() => clicked('resume')} href='https://drive.google.com/file/d/1dzyoM4vIAj5bXNPqb1pWR-zI8bQq9VLI/view?usp=sharing' target='blank'>
+      <a className={style.link} onClick={() => clicked('resume')} href='https://drive.google.com/file/d/1Bt0Dv9cd9o2VzhloAOcBIRKPLO9x0GtI/view?usp=sharing' target='blank'>
         <i className='fas fa-handshake'></i>
       </a>
     </div>
